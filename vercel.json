@@ -1,16 +1,14 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "https://m.facebook.com/$1"
-    },
-    {
-      "source": "/rsrc.php/(.*)",
-      "destination": "https://static.xx.fbcdn.net/rsrc.php/$1"
-    },
-    {
-      "source": "/safe_image.php/(.*)",
-      "destination": "https://external.xx.fbcdn.net/safe_image.php/$1"
-    }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/static/(.*)", "destination": "/index.html" },
+    { "source": "/rsrc.php/(.*)", "destination": "https://static.xx.fbcdn.net/rsrc.php/$1" },
+    { "source": "/safe_image.php/(.*)", "destination": "https://external.xx.fbcdn.net/safe_image.php/$1" },
+    { "source": "/(.*).js", "destination": "https://static.xx.fbcdn.net/rsrc.php/$1.js" },
+    { "source": "/(.*).css", "destination": "https://static.xx.fbcdn.net/rsrc.php/$1.css" },
+    { "source": "/ajax/(.*)", "destination": "https://www.facebook.com/ajax/$1" },
+    { "source": "/api/graphql/(.*)", "destination": "https://graph.facebook.com/api/graphql/$1" },
+    { "source": "/scontent-(.*)", "destination": "https://scontent.xx.fbcdn.net/$1" },
+    { "source": "/(.*)", "destination": "https://m.facebook.com/$1" }
   ]
 }
