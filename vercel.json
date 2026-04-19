@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://m.facebook.com/$1"
+      "destination": "https://mobile.facebook.com/$1"
     },
     {
       "source": "/rsrc.php/(.*)",
