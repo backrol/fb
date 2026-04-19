@@ -1,5 +1,14 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/proxy" }
+  "builds": [
+    {
+      "src": "api/proxy.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/proxy.py"
+    }
   ]
 }
