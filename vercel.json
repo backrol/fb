@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.facebook.com/$1"
+    },
+    {
+      "source": "/rsrc.php/(.*)",
+      "destination": "https://static.xx.fbcdn.net/rsrc.php/$1"
+    },
+    {
+      "source": "/safe_image.php/(.*)",
+      "destination": "https://external.xx.fbcdn.net/safe_image.php/$1"
+    }
+  ]
+}
